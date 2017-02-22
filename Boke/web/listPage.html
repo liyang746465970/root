@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		body{
+			margin-top:50px;
+		}
+	</style>
+  </head>
+  <body>
+	
+    <nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="./images/logo.png" height="250%" style='margin-top:-18px;' alt="Prometheus logo"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/docs/introduction/overview/">首页</a></li>
+					<li><a href="/download/">关于我</a></li>
+					<li><a href="/community/">慢生活</a></li>
+					<li><a href="/blog/">碎言碎语</a></li>
+					<li><a href="/blog/">模板分享</a></li>
+					<li><a href="/blog/">留言板</a></li>
+					<li><a href="/blog/">我的博客</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/docs/introduction/overview/">登录</a></li>
+					<li><a href="/docs/introduction/overview/">注册</a></li>
+				</ul>	
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+					<input type="text" placeholder="你想要搜索什么？" class="form-control">
+					</div>
+					
+					<button type="submit" class="btn btn-success">搜索</button>
+				</form>
+			</div>	     
+		</div>		
+	</nav>
+	
+	
+	
+	
+	<div class="container-fluid "  style="background-color:#ECECEC;">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-8 container">
+					<div>
+						<h3 style="font-size:22px;">文章推荐</h3>
+						<div style="width:100%;height:1px;border:1px dashed #D9D9DB;"></div>
+					</div>
+					<div class="media row" style="background-color:white;width:100%;height:100%;padding:15px;margin-left:2px;">
+						<div class="col-md-4 ">
+							<a href="#">
+								<img class="media-object" src="./images/4.jpg" style='width:220px;height:145px;'>
+							</a>
+						</div>
+						<div class="col-md-8">
+							<h3 class="media-heading" style="margin-bottom:13px;margin-top:7px;">一段小程序带你走进Generator生成器函数</h3><p style="line-height:25px;font-size:13px">generator指当你在执行一个函数的时候,你可以在函数的某一个点暂停函数的执行，并且做一些其他的工作，然后在返回到这个函数里面继续执行甚至是携带一些新的值向下传递执行</p>
+							<span style="font-size:13px;margin-top:10px"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>啊啊啊 &nbsp;&nbsp;<span class="glyphicon glyphicon-time" aria-hidden="true"></span> 2016-12-31</span> 
+							<span style="font-size:13px;margin-right:20px;margin-top:10px"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"> </span> (110) &nbsp;&nbsp;<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> </span> (33)</span>
+						</div>
+					</div>
+					<nav aria-label="Page navigation container " style='text-align:center;margin-top:20px;'>
+						 <ul class="pagination">
+							<li>
+							  <a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							  </a>
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li>
+							  <a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							  </a>
+							</li>
+						 </ul>
+					</nav>
+				</div>
+				<div class="col-md-4" style='padding-top:55px;' >
+					<div class="panel panel-default" >
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								<span class='glyphicon glyphicon-thumbs-up'></span> 热门推荐
+							</a>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/2.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/1.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/2.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="panel panel-default" style='margin-top:30px;'>
+						<div class="list-group">
+						  <a href="#" class="list-group-item active">
+							<span class='glyphicon glyphicon-pencil'></span> 最新发布
+						  </a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Morbi leo risus</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  
+						</div>
+					</div>
+					<div class="panel panel-default">
+                    <!-- Default panel contents -->
+						 <a href="#" class="list-group-item active">
+							<span class='glyphicon glyphicon-volume-up'></span> 最新公告
+						  </a>
+						<!-- Default panel contents -->
+						
+						 <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Morbi leo risus</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+					
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="main-footer" style='background-color:#202020;'>
+	<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>推荐友情链接</h4>
+                    <div class="content friend-links">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap中文网</a>
+                        <a href="http://www.golaravel.com/" title="Laravel中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Laravel中文网'])" target="_blank">Laravel中文网</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>我们用到的技术</h4>
+                    <div class="content tag-cloud">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap</a>
+                        <a href="http://www.ghostchina.com/" title="Ghost中国" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Ghost中国'])" target="_blank">Ghost</a>
+                        <a href="http://www.bootcdn.cn/" title="BootCDN" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'BootCDN'])" target="_blank">BootCDN</a>
+                        <a href="http://www.gruntjs.net/" title="Grunt中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Grunt中文网'])" target="_blank">Grunt</a>
+                        <a href="http://www.jquery123.com/" title="jQuery中文文档" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'jQuery中文文档'])" target="_blank">jQuery</a>
+                        <a href="http://babeljs.cn/" title="Babeljs中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Babeljs中文网'])" target="_blank">Babeljs</a>
+                        <a href="http://lodashjs.com/" title="lodash中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Lodash中文网'])" target="_blank">Lodash</a>
+                        <a href="http://www.gulpjs.com.cn/" title="Gulp中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Gulp中文网'])" target="_blank">Gulp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>赞助商</h4>
+                    <div class="content friend-links">
+                        <a href="https://www.upyun.com/" title="又拍云" onclick="_hmt.push(['_trackEvent', 'link', 'click', '又拍云'])" target="_blank">又拍云</a>
+                        <a href="http://www.lampbrother.net" title="兄弟连" onclick="_hmt.push(['_trackEvent', 'link', 'click', '又拍云'])" target="_blank">兄弟连</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<br>
+	</footer>
+	
+	<footer class="main-footer" style='background-color:#111111;'>
+		<div class="copyright">
+			<div class="container">
+			<br>
+				<div class="row">
+					<div class="col-sm-12" style='text-align:center;' >
+						Design by：李阳
+						<span>Copyright &copy; <a href="http://expo.bootcss.com">优站精选</a></span> |
+						<span><a href="http://www.miibeian.gov.cn/" target="_blank">临汾ICP备11008151号</a></span>
+					</div>
+				</div>
+			<br>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

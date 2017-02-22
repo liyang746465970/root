@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="HTML带表情的评论框,HTML评论框,表情评论框" />
+	<meta name="description" content="HTML带表情的评论框实现" />
+	<meta name="application-name" content="HTML带表情的评论框-彭亚欧个人博客代码中心" />
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	
+	<style type="text/css">
+	body{
+		margin-top:50px;
+	}
+	</style>
+  </head>
+  <body>
+	
+    <nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="./images/logo.png" height="250%" style='margin-top:-18px;' alt="Prometheus logo"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/docs/introduction/overview/">首页</a></li>
+					<li><a href="/download/">关于我</a></li>
+					<li><a href="/community/">慢生活</a></li>
+					<li><a href="/blog/">碎言碎语</a></li>
+					<li><a href="/blog/">模板分享</a></li>
+					<li><a href="/blog/">留言板</a></li>
+					<li><a href="/blog/">我的博客</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/docs/introduction/overview/">登录</a></li>
+					<li><a href="/docs/introduction/overview/">注册</a></li>
+				</ul>	
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+					<input type="text" placeholder="你想要搜索什么？" class="form-control">
+					</div>
+					
+					<button type="submit" class="btn btn-success">搜索</button>
+				</form>
+			</div>	     
+		</div>		
+	</nav>
+	<div class="container-fluid "  style="background-color:#ECECEC;">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-8 container">
+					<div>
+						<h3 style="font-size:22px;">文章标题</h3>
+						<div style="width:100%;height:1px;border:1px dashed  #D9D9DB;"></div>
+					</div>
+					<div class="media row" style="width:100%;height:100%;margin-left:2px;">
+						<div class="thumbnail">
+							<div class="caption">
+								<center>
+									<h3>Thumbnail label</h3>
+									<div style="border:2px dashed;margin:10px;">
+										<span>发布时间：</span><span>2016-12-06</sapn>&nbsp;&nbsp;&nbsp;&nbsp;
+										<sapn>编辑：</span><a href="#"><span>李阳</span></a>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+										<span>阅读：</span>
+										<span>(102)</span>
+									</div>
+								</center>
+									<p class="pst" style="text-indent:2em;">博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补…
+									</p>
+									<p class="pst">
+									其实蛮遗憾的，话说这四年，并不是很专注于它，起初的建立是因为“面子”，一个网页设计师怎能没有一个属于自己的博客网站，域名几番斟酌选了yangqq(唯一用心的选了域名)，选好后，草草的用了两天时间，设计了一个简单的博客模板，接下来用了漏洞百出的asp程序(自己瞎改)，从网上copy了很多文章，放到网站上，就这样，我满心欢喜…博客从此也就搁置了。就像玩拼图，趁着三分热度和新奇，一鼓作气完成了，就随意的丢在犄角旮旯了，再也没有兴趣…
+									</p>
+								<center>
+									<img src="./images/logo.png"/>
+								</center>
+									<p class="pst">
+									其实蛮遗憾的，话说这四年，并不是很专注于它，起初的建立是因为“面子”，一个网页设计师怎能没有一个属于自己的博客网站，域名几番斟酌选了yangqq(唯一用心的选了域名)，选好后，草草的用了两天时间，设计了一个简单的博客模板，接下来用了漏洞百出的asp程序(自己瞎改)，从网上copy了很多文章，放到网站上，就这样，我满心欢喜…博客从此也就搁置了。就像玩拼图，趁着三分热度和新奇，一鼓作气完成了，就随意的丢在犄角旮旯了，再也没有兴趣…
+									</p>
+							</div>
+						</div>
+					</div>
+					<nav aria-label="Page navigation container " style='text-align:center;'>
+						 <ul class="pagination">
+							<li>
+							  <a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							  </a>
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li>
+							  <a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							  </a>
+							</li>
+						 </ul>
+					</nav>
+					<div style='margin:5px;'>
+						<a href="#"><span class="glyphicon glyphicon-hand-up"></span>上一篇：qqqqqqq</a>
+					</div>
+					<div  style='margin:5px;'>
+						<a href="#"><span class="glyphicon glyphicon-hand-down"></span>下一篇：aaaaaa</a>
+					</div>
+						<div class="panel panel-success">
+						<!-- Default panel contents -->
+						<div class="panel-heading">
+							<div class="pbn">
+								<button type="button" class="btn btn-primary">评论</button>
+								<button type="button" class="btn btn-success">最新</button>
+								<button type="button" class="btn btn-danger">最热</button>
+							</div>
+						</div>
+						<div class="media" style="background-color:white;padding:12px;">
+							<div class="media-left media-middle">
+								<a href="#">
+								<img class="media-object zjfk" src="./images/1.png" alt="文章图片">
+								</a>
+							</div>
+							
+							<div class="media-body">
+								<a href="#"><h4 class="media-heading">aligned media</h4></a>
+									有的人你可能认识了一辈子却忽视了一辈子；
+							</div>
+							<br/>
+							<div class="pl">
+								<span>评论:</span>李阳&nbsp;
+								<span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp;<span>评论时间：2016-12-06</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="#">
+									<span class="zhuanfa">
+										<span class="glyphicon glyphicon-share-alt"></span><span>转发<span>(42)</span></span>
+									</span>
+								</a>
+								<a href="#">
+									<span class="ding">
+										<span class="glyphicon glyphicon-heart-empty"></span><span>顶</span>
+									</span>
+								</a>
+								<a href="#">
+									<span class="huifu">
+									<span class="glyphicon glyphicon-edit"></span><span>回复</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						</div>
+						<div style="margin-top:30px;">
+						<h4>发表评论：</h4>
+						</div>
+						<div >
+							<div class="media">
+								
+								<div class="media-body">
+									<div id="Demo" >
+									  <div class="Main">
+										<div class="Input_Box">
+											<textarea class="Input_text" name="" rows="7" cols="103"></textarea>
+											<center>
+											<button type="button" class="btn btn-success">发布</button>
+											</center>
+										</div>
+									  </div>
+									</div>
+									<!--<textarea style="width:100%;height:100px;">说点什么吧</textarea>
+									<div style="float:right;"><button type="button" class="btn btn-primary">发布</button></div>-->
+								</div>
+							</div>
+						</div>
+				</div>
+			
+				<div class="col-md-4" style='padding-top:55px;' >
+					<div class="panel panel-default" >
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								<span class='glyphicon glyphicon-thumbs-up'></span> 热门推荐
+							</a>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/2.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/1.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/2.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						<div class="media" style='padding:5px;'>
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="./images/4.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+							<h4 class="media-heading"><a href='#' style='text-decoration:none'>Media heading</a></h4>
+								你在干嘛
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="panel panel-default" style='margin-top:30px;'>
+						<div class="list-group">
+						  <a href="#" class="list-group-item active">
+							<span class='glyphicon glyphicon-pencil'></span> 最新发布
+						  </a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Morbi leo risus</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  
+						</div>
+					</div>
+					<div class="panel panel-default">
+                    <!-- Default panel contents -->
+						 <a href="#" class="list-group-item active">
+							<span class='glyphicon glyphicon-volume-up'></span> 最新公告
+						  </a>
+						<!-- Default panel contents -->
+						
+						 <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Dapibus ac facilisis in</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Morbi leo risus</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Porta ac consectetur ac</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+						  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Vestibulum at eros</a>
+					
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+					
+					
+					
+					
+
+	<footer class="main-footer" style='background-color:#202020;'>
+	<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>推荐友情链接</h4>
+                    <div class="content friend-links">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap中文网</a>
+                        <a href="http://www.golaravel.com/" title="Laravel中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Laravel中文网'])" target="_blank">Laravel中文网</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>我们用到的技术</h4>
+                    <div class="content tag-cloud">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap</a>
+                        <a href="http://www.ghostchina.com/" title="Ghost中国" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Ghost中国'])" target="_blank">Ghost</a>
+                        <a href="http://www.bootcdn.cn/" title="BootCDN" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'BootCDN'])" target="_blank">BootCDN</a>
+                        <a href="http://www.gruntjs.net/" title="Grunt中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Grunt中文网'])" target="_blank">Grunt</a>
+                        <a href="http://www.jquery123.com/" title="jQuery中文文档" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'jQuery中文文档'])" target="_blank">jQuery</a>
+                        <a href="http://babeljs.cn/" title="Babeljs中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Babeljs中文网'])" target="_blank">Babeljs</a>
+                        <a href="http://lodashjs.com/" title="lodash中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Lodash中文网'])" target="_blank">Lodash</a>
+                        <a href="http://www.gulpjs.com.cn/" title="Gulp中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Gulp中文网'])" target="_blank">Gulp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title" style='color:white;'>赞助商</h4>
+                    <div class="content friend-links">
+                        <a href="https://www.upyun.com/" title="又拍云" onclick="_hmt.push(['_trackEvent', 'link', 'click', '又拍云'])" target="_blank">又拍云</a>
+                        <a href="http://www.lampbrother.net" title="兄弟连" onclick="_hmt.push(['_trackEvent', 'link', 'click', '又拍云'])" target="_blank">兄弟连</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<br>
+	</footer>
+	
+	<footer class="main-footer" style='background-color:#111111;'>
+		<div class="copyright">
+			<div class="container">
+			<br>
+				<div class="row">
+					<div class="col-sm-12" style='text-align:center;' >
+						Design by：李阳
+						<span>Copyright &copy; <a href="http://expo.bootcss.com">优站精选</a></span> |
+						<span><a href="http://www.miibeian.gov.cn/" target="_blank">临汾ICP备11008151号</a></span>
+					</div>
+				</div>
+			<br>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  <script src="http://www.pengyaou.com/jquery-1.4.min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(e) {
+		ImgIputHandler.Init();
+	});
+	var ImgIputHandler={
+		facePath:[
+			{faceName:"微笑",facePath:"0_微笑.gif"},
+			{faceName:"撇嘴",facePath:"1_撇嘴.gif"},
+			{faceName:"色",facePath:"2_色.gif"},
+			{faceName:"发呆",facePath:"3_发呆.gif"},
+			{faceName:"得意",facePath:"4_得意.gif"},
+			{faceName:"流泪",facePath:"5_流泪.gif"},
+			{faceName:"害羞",facePath:"6_害羞.gif"},
+			{faceName:"闭嘴",facePath:"7_闭嘴.gif"},
+			{faceName:"大哭",facePath:"9_大哭.gif"},
+			{faceName:"尴尬",facePath:"10_尴尬.gif"},
+			{faceName:"发怒",facePath:"11_发怒.gif"},
+			{faceName:"调皮",facePath:"12_调皮.gif"},
+			{faceName:"龇牙",facePath:"13_龇牙.gif"},
+			{faceName:"惊讶",facePath:"14_惊讶.gif"},
+			{faceName:"难过",facePath:"15_难过.gif"},
+			{faceName:"酷",facePath:"16_酷.gif"},
+			{faceName:"冷汗",facePath:"17_冷汗.gif"},
+			{faceName:"抓狂",facePath:"18_抓狂.gif"},
+			{faceName:"吐",facePath:"19_吐.gif"},
+			{faceName:"偷笑",facePath:"20_偷笑.gif"},
+			{faceName:"可爱",facePath:"21_可爱.gif"},
+			{faceName:"白眼",facePath:"22_白眼.gif"},
+			{faceName:"傲慢",facePath:"23_傲慢.gif"},
+			{faceName:"饥饿",facePath:"24_饥饿.gif"},
+			{faceName:"困",facePath:"25_困.gif"},
+			{faceName:"惊恐",facePath:"26_惊恐.gif"},
+			{faceName:"流汗",facePath:"27_流汗.gif"},
+			{faceName:"憨笑",facePath:"28_憨笑.gif"},
+			{faceName:"大兵",facePath:"29_大兵.gif"},
+			{faceName:"奋斗",facePath:"30_奋斗.gif"},
+			{faceName:"咒骂",facePath:"31_咒骂.gif"},
+			{faceName:"疑问",facePath:"32_疑问.gif"},
+			{faceName:"嘘",facePath:"33_嘘.gif"},
+			{faceName:"晕",facePath:"34_晕.gif"},
+			{faceName:"折磨",facePath:"35_折磨.gif"},
+			{faceName:"衰",facePath:"36_衰.gif"},
+			{faceName:"骷髅",facePath:"37_骷髅.gif"},
+			{faceName:"敲打",facePath:"38_敲打.gif"},
+			{faceName:"再见",facePath:"39_再见.gif"},
+			{faceName:"擦汗",facePath:"40_擦汗.gif"},
+			
+			{faceName:"抠鼻",facePath:"41_抠鼻.gif"},
+			{faceName:"鼓掌",facePath:"42_鼓掌.gif"},
+			{faceName:"糗大了",facePath:"43_糗大了.gif"},
+			{faceName:"坏笑",facePath:"44_坏笑.gif"},
+			{faceName:"左哼哼",facePath:"45_左哼哼.gif"},
+			{faceName:"右哼哼",facePath:"46_右哼哼.gif"},
+			{faceName:"哈欠",facePath:"47_哈欠.gif"},
+			{faceName:"鄙视",facePath:"48_鄙视.gif"},
+			{faceName:"委屈",facePath:"49_委屈.gif"},
+			{faceName:"快哭了",facePath:"50_快哭了.gif"},
+			{faceName:"阴险",facePath:"51_阴险.gif"},
+			{faceName:"亲亲",facePath:"52_亲亲.gif"},
+			{faceName:"吓",facePath:"53_吓.gif"},
+			{faceName:"可怜",facePath:"54_可怜.gif"},
+			{faceName:"菜刀",facePath:"55_菜刀.gif"},
+			{faceName:"西瓜",facePath:"56_西瓜.gif"},
+			{faceName:"啤酒",facePath:"57_啤酒.gif"},
+			{faceName:"篮球",facePath:"58_篮球.gif"},
+			{faceName:"乒乓",facePath:"59_乒乓.gif"},
+			{faceName:"拥抱",facePath:"78_拥抱.gif"},
+			{faceName:"握手",facePath:"81_握手.gif"},
+			{faceName:"得意地笑",facePath:"得意地笑.gif"},
+			{faceName:"听音乐",facePath:"听音乐.gif"}
+		]
+		,
+		Init:function(){
+			var isShowImg=false;
+			$(".Input_text").focusout(function(){
+				$(this).parent().css("border-color", "#cccccc");
+				$(this).parent().css("box-shadow", "none");
+				$(this).parent().css("-moz-box-shadow", "none");
+				$(this).parent().css("-webkit-box-shadow", "none");
+			});
+			$(".Input_text").focus(function(){
+			$(this).parent().css("border-color", "rgba(19,105,172,.75)");
+			$(this).parent().css("box-shadow", "0 0 3px rgba(19,105,192,.5)");
+			$(this).parent().css("-moz-box-shadow", "0 0 3px rgba(241,39,232,.5)");
+			$(this).parent().css("-webkit-box-shadow", "0 0 3px rgba(19,105,252,3)");
+			});
+			$(".imgBtn").click(function(){
+				if(isShowImg==false){
+					isShowImg=true;
+					$(this).parent().prev().animate({marginTop:"-125px"},300);
+					if($(".faceDiv").children().length==0){
+						for(var i=0;i<ImgIputHandler.facePath.length;i++){
+							$(".faceDiv").append("<img title=\""+ImgIputHandler.facePath[i].faceName+"\" src=\"face/"+ImgIputHandler.facePath[i].facePath+"\" />");
+						}
+						$(".faceDiv>img").click(function(){
+							 
+							isShowImg=false;
+							$(this).parent().animate({marginTop:"0px"},300);
+							ImgIputHandler.insertAtCursor($(".Input_text")[0],"["+$(this).attr("title")+"]");
+						});
+					}
+				}else{
+					isShowImg=false;
+					$(this).parent().prev().animate({marginTop:"0px"},300);
+				}
+			});
+			$(".postBtn").click(function(){
+				alert($(".Input_text").val());
+			});
+		},
+		insertAtCursor:function(myField, myValue) {
+		if (document.selection) {
+			myField.focus();
+			sel = document.selection.createRange();
+			sel.text = myValue;
+			sel.select();
+		} else if (myField.selectionStart || myField.selectionStart == "0") {
+			var startPos = myField.selectionStart;
+			var endPos = myField.selectionEnd;
+			var restoreTop = myField.scrollTop;
+			myField.value = myField.value.substring(0, startPos) + myValue + myField.value.substring(endPos, myField.value.length);
+			if (restoreTop > 0) {
+				myField.scrollTop = restoreTop;
+			}
+			myField.focus();
+			myField.selectionStart = startPos + myValue.length;
+			myField.selectionEnd = startPos + myValue.length;
+		} else {
+			myField.value += myValue;
+			myField.focus();
+		}
+	}
+	}
+</script>
+</html>
